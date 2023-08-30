@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon 5e Level Up HP Calculator</title>
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <script src="/assets/scripts/elements.js" defer></script>
+    <script src="/assets/scripts/calculations.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="left-col" id="left-col">
+        <div class="hpform-wrapper">
+          <form class="hpform">
+            <div class="user-input">
+              <div class="labelinput-wrapper">
+                <label class="hp-label" for="hp-input"
+                  >Insert current max HP:</label
+                >
+                <input
+                  type="text"
+                  class="hp-input"
+                  id="hp-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="labelinput-wrapper">
+                <label class="hp-label" for="die-list">Choose a hit die:</label>
+                <select id="die-list">
+                  <option value="6">D6</option>
+                  <option value="8">D8</option>
+                  <option value="10">D10</option>
+                  <option value="12">D12</option>
+                </select>
+              </div>
+            </div>
+            <div class="output-message output" id="output-message"></div>
+            <button type="button" class="calculate-btn btn" id="calculate-btn">
+              Calculate
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="right-col" id="right-col">
+        <div class="catchform-wrapper">
+          <form class="catchrate-form">
+            <div class="inputs">
+              <div class="labelinput-wrapper">
+                <label class="catch-label" for="sr-input">Insert SR:</label>
+                <input
+                  type="text"
+                  class="sr-input"
+                  id="sr-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="labelinput-wrapper">
+                <label class="catch-label" for="lvl-input"
+                  >Level of the Pokémon:</label
+                >
+                <input
+                  type="text"
+                  class="lvl-input"
+                  id="lvl-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="labelinput-wrapper">
+                <label class="catch-label" for="currenthp-input"
+                  >Current HP:</label
+                >
+                <input
+                  type="text"
+                  class="currenthp-input"
+                  id="currenthp-input"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="catch-dc output" id="catch-dc"></div>
+            <button type="button" class="catch-btn btn" id="catch-btn">
+              Calculate Catch DC
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
